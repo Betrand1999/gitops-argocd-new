@@ -48,7 +48,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nginx
+        image: httpd
         resources:
           limits:
             memory: "128Mi"
