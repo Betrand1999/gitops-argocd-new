@@ -19,7 +19,7 @@ metadata:
   name: myapp
   namespace: dev-namespace  
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: myapp
@@ -37,3 +37,4 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 80
+--- 
