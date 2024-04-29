@@ -37,7 +37,7 @@ metadata:
   name: myapp
   namespace: dev-namespace  
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: myapp
