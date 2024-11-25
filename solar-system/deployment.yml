@@ -1,22 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: static-website-deployment
-  namespace: dev
-  labels:
-    app: static-website
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: static-website
-  template:
-    metadata:
-      labels:
-        app: static-website
-    spec:
-      containers:
-      - name: static-website
-        image: betrand1997/my-static-websites:latest
-        ports:
-        - containerPort: 80
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: static-website-deployment
+#   namespace: dev
+#   labels:
+#     app: static-website
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: static-website
+#   template:
+#     metadata:
+#       labels:
+#         app: static-website
+#     spec:
+#       containers:
+#       - name: static-website
+#         image: betrand1997/my-static-websites:latest
+#         ports:
+#         - containerPort: 80
