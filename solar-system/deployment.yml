@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: static-website
-        image: betrand1997/my-static-websites:latest
+        image: image: nginx:alpine
         ports:
         - containerPort: 80
