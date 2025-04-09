@@ -13,4 +13,4 @@ spec:
   - protocol: TCP
     port: 80           # Service port
     targetPort: 80     # Container port
-    nodePort: 30007    # NodePort (must be between 30000-32767)
+ type: LoadBalancer    # NodePort (must be between 30000-32767)
