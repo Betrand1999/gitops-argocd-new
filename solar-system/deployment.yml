@@ -2,11 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: static-website-deployment
-  namespace: dev
   labels:
     app: static-website
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: static-website
@@ -16,7 +15,7 @@ spec:
         app: static-website
     spec:
       containers:
-      - name: static-website
-        image: image: nginx:alpine
-        ports:
-        - containerPort: 80
+        - name: nginx-container
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
